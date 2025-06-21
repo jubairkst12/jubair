@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-blue-600">My Portfolio</h1>
+        <nav class="space-x-4">
+          <a href="#about" class="hover:text-blue-600">About</a>
+          <a href="#projects" class="hover:text-blue-600">Project</a>
+          <a href="#contact" class="hover:text-blue-600">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="text-center mt-10">
+      <img src="/jubair.jpeg" alt="Md Jubair Rahman" class="mx-auto w-32 h-32 rounded-full shadow-lg mb-4">
+      <h1 class="text-3xl font-bold">
+        Hello! <span class="text-blue-600">Md Jubair Rahman</span>
+      </h1>
+      <p class="text-gray-600">A web developer and designer</p>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">About me</h2>
+      <p class="text-lg leading-relaxed text-justify">
+        I am a passionate and skilled WordPress developer with a strong focus on creating fast, responsive, and SEO-friendly websites. Over the years, I have worked with diverse clients to build custom WordPress themes, configure plugins, and develop fully functional e-commerce solutions. I take pride in delivering user-friendly and client-focused web experiences that align with modern web standards.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+      <div class="max-w-5xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-10 text-center">My Project</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 p-5 rounded-lg shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+            <p>A responsive business website built with HTML and Tailwind CSS.</p>
+          </div>
+          <div class="bg-gray-50 p-5 rounded-lg shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+            <p>A personal blog website built with dynamic features.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 max-w-4xl mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Contact Us</h2>
+      <form class="bg-white p-6 rounded shadow-md space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" required />
+        <input type="email" placeholder="Email" class="w-full p-3 border rounded" required />
+        <textarea placeholder="Write a message..." class="w-full p-3 border rounded" rows="5" required></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6 mt-10">
+     | Md Jubair Rahman |
+    </footer>
+  </body>
+</html>
